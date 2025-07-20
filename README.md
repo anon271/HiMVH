@@ -20,8 +20,8 @@ cd HiMVH
 
 ### 2. Environment Setup
 ```bash
-conda create -n wsch python=3.10.13
-conda activate wsch
+conda create -n HiMVH python=3.10.13
+conda activate HiMVH
 conda install pytorch==2.1.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
