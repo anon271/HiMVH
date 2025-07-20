@@ -1,9 +1,6 @@
-# WSCH: Wide-Shallow Autoencoder for Self-Supervised Video Hashing with Cyclic Multi-Task Learning
+# HiMVH: Hierarchical Multi-level Feature Learning Framework for Efficient Video Hashing
 
 ![](figure/model.png)
-
-![](figure/train.png)
-
 
 ## Catalogue <br> 
 * [1. Getting Started](#Getting-Started)
@@ -17,8 +14,8 @@
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/anon271/WSCH
-cd WSCH
+git clone https://github.com/anon271/HiMVH
+cd HiMVH
 ```
 
 ### 2. Environment Setup
@@ -30,23 +27,23 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download Datasets
-VGG features of FCVID and YFCC are kindly provided by the authors of [SSVH]. ResNet50 features of ActivityNet are provided by the authors of [BTH]. You can download these datasets from Baidu disk:
+VGG feature of FCVID is kindly provided by the authors of [SSVH]. ResNet50 features of ActivityNet are provided by the authors of [BTH]. You can download these datasets from Baidu disk:
 
 | Dataset | Link |
 |---------|------|
 | FCVID | [Baidu disk](https://pan.baidu.com/s/1v0qo4PtiZgFB9iLmj3sJIg?pwd=0000) |
 | ActivityNet | [Baidu disk](https://pan.baidu.com/s/1cDJ0-6T2-AOeLgp5rBihfA?pwd=0000) |
-| YFCC | [Baidu disk](https://pan.baidu.com/s/1jpqcRRFdiemGvlPpukxJ6Q?pwd=0000) |
+| UCF101 | [Baidu disk](https://pan.baidu.com/s/1jpqcRRFdiemGvlPpukxJ6Q?pwd=0000) |
 
 ### 4. Configure Dataset Paths
 Modify the dataset paths in the corresponding JSON files:
 - Json/Anet.json
 - Json/fcvid.json
-- Json/yfcc.json
+- Json/ucf.json
 
 ## Training
 
-### Training WSCH:
+### Training HiMVH:
 
 1. Modify parameters in `run.py`:
    - `data_set_config`: Path to dataset JSON file
@@ -88,7 +85,7 @@ python run.py
 
 ## Trained Models
 
-Trained WSCH checkpoints are available for download from: [Baidu disk](https://pan.baidu.com/s/1qdCe6eZQR6ijhen_MbDbUg?pwd=mfok#list/path=%2F) .
+Trained HiMVH checkpoints are available for download from: [Baidu disk](https://pan.baidu.com/s/1qdCe6eZQR6ijhen_MbDbUg?pwd=mfok#list/path=%2F) .
 
 ## Results
 
